@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Xypo | Welcome</title>
 </head>
 <body>
 <div class="body-container">
         <!-- header -->
-        <header id="header">
+        <header id="header" data-aos="zoom-in-up">
             <div class="container">
                 <img src="./images/logo.png" class="logo" alt="">
                 <div class="header-text">
@@ -42,7 +44,7 @@
     <img src="./images/menu.png" id="menuBtn">
     
     <!-- About -->
-    <section id="about">
+    <section id="about" data-aos="fade-right">
         <div class="about-left-col">
             <img src="./images/about.png" alt="">
         </div>
@@ -66,7 +68,7 @@
         </div>
     </section>
     <!-- Features -->
-    <section id="features">
+    <section id="features" data-aos="zoom-in-up">
         <div class="feature-row">
             <div class="feature-col">
                 <img src="./images/pic-1.png" alt="">
@@ -96,7 +98,7 @@
         </div>
     </section>
     <!-- Courses -->
-    <section id="courses">
+    <section id="courses" data-aos="fade-left">
         <div class="container course-row">
             <div class="course-left-col">
                 <div class="course-text">
@@ -119,7 +121,7 @@
         </div>
     </section>
     <!-- Offer -->
-    <section id="offer">
+    <section id="offer" data-aos="fade-right">
         <div class="about-left-col">
             <img src="./images/offer.png" alt="">
         </div>
@@ -140,7 +142,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-left">
         <div class="container contact-row">
             <div class="contact-left-col">
                 <h1>Sign Up to join our<br>learning community</h1>
@@ -167,7 +169,7 @@
         </div>
     </section>
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" data-aos="zoom-in-up">
         <div class="container footer-row">
             <hr>
             <div class="footer-left-col">
@@ -240,6 +242,9 @@
 	speedAsDuration: true
 });
 </script>
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
