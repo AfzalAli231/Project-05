@@ -3,8 +3,22 @@
     padding: 0;
     font-family: sans-serif;
 }
+.body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "about"
+    "features"
+    "courses"
+    "offer"
+    "contact"
+    "footer"
+    ;
+}
 /* header */
 #header {
+    grid-area: header;
     height: 100vh;
     background-image: url(./images/background.png);
     background-position: center;
@@ -83,6 +97,7 @@ p{
 }
 /* Nav */
 #sideNav{
+    grid-area: nav;
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -112,6 +127,9 @@ nav ul li a {
     cursor: pointer;
 }
 /* About */
+#about{
+    grid-area: about;
+}
 
 #about,
 #offer{
@@ -154,6 +172,7 @@ nav ul li a {
 
 /* features */
 #features {
+    grid-area: features;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -197,6 +216,7 @@ nav ul li a {
 
 /* courses */
 #courses{
+    grid-area: courses;
     padding: 100px 0;
 }
 
@@ -227,11 +247,17 @@ nav ul li a {
 }
 
 /* Offer */
+#offer{
+    grid-area: offer;
+}
 #offer button{
     margin: 30px 0;
 }
 
 /* contact */
+#contact{
+    grid-area: contact;
+}
 .contact-row{
     display: flex;
     align-items: center;
@@ -279,6 +305,7 @@ form input {
 
 /* footer */
 #footer{
+    grid-area: footer;
     padding: 50px 0 30px;
 }
 
